@@ -79,108 +79,58 @@ eleventyNavigation:
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-{% include 'components/hero-856.html' %}
+<section id="hero-1160">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">The Best Care Servicing In Town</span>
+            <h1 class="cs-title">We Are Qualified And Professional</h1>
+            <p class="cs-text">
+                We are the premier Stitch Design Pack for mechanics and auto body websites of all varieties.
+            </p>
+            <a href="" class="cs-button-solid">Explore Services</a>
+        </div>
+    </div>
+
+    <!-- Background Image, also BG Image is set in CSS at 1600px wide for parallax effect -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechaninc-8.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechaninc-8.jpg">
+        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechaninc-8.jpg" alt="garage" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                                
+<!-- ============================================ -->
+<!--             Popular Services                 -->
+<!-- ============================================ -->
+
+{% include 'components/services-1498.html' %}
+
 
 <!-- ============================================ -->
 <!--               Why Choose Us                  -->
 <!-- ============================================ -->
 
-{% include 'components/why-choose-687.html' %}
-
-{% include 'components/why-choose-1313.html' %}
-
-{% include 'components/why-choose-1631.html' %}
-
 {% include 'components/why-choose-1635.html' %}
 
-{% include 'components/why-choose-1658.html' %}
+<!-- ============================================ -->
+<!--                 About Us                     -->
+<!-- ============================================ -->
+
+{% include 'components/sbsr-1007.html' %}
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+{% include 'components/reviews-1396.html' %}
 
 
 <!-- ============================================ -->
-<!--            Featured Service 1                -->
+<!--                  Gallery                     -->
 <!-- ============================================ -->
 
-<section id="sbs-867">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image -->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image -->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
-            </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="" class="cs-button-solid">Learn More</a>
-        </div>
-    </div>
-</section>
+{% include 'components/gallery-402.html' %}
 
-<!-- ============================================ -->
-<!--             Popular Services                 -->
-<!-- ============================================ -->
-
-{% include 'components/services-343.html' %}
-
-{% include 'components/services-877.html' %}
-
-{% include 'components/services-879.html' %}
-
-{% include 'components/services-1251.html' %}
-
-{% include 'components/services-2129.html' %}
-
-
-
-<!-- ============================================ -->
-<!--             Featured Service 2               -->
-<!-- ============================================ -->
-
-<section id="sbs-r-870">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image -->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image -->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
-            </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="{{client.onlineBooking}}" class="cs-button-solid">Learn More</a>
-        </div>
-    </div>
-</section>
 
 <!-- ============================================ -->
 <!--                    FAQ                       -->
@@ -193,19 +143,19 @@ eleventyNavigation:
             <h2 class="cs-title">Frequently Asked Questions</h2>
             <picture class="cs-picture">
                 <!--Mobile Image -->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 720}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 720}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 576, height: 720}) | jpeg %}" type="image/jpeg">
                 <!--Tablet Image -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1168, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1168, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1168, height: 800}) | jpeg %}" type="image/jpeg">
                 <!--Desktop Image -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" alt="massage products" width="1044" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1024, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1024, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1024, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/why-us.jpg" | resize({width: 1024, height: 800}) | jpeg %}" alt="pad thai noodles" width="522" height="400" loading="lazy" decoding="async">
+            </picture>
         </div>
         <div class="cs-flex-group">
             <ul class="cs-faq-group">
@@ -263,13 +213,7 @@ eleventyNavigation:
             </ul>
         </div>
     </div>
-</section>
-
-<!-- ============================================ -->
-<!--                   Reviews                    -->
-<!-- ============================================ -->
-                                
-{% include 'components/reviews-1673.html' %}                             
+</section>         
                                 
                                 
                                 

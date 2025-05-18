@@ -1,0 +1,96 @@
+---
+title: 'Swedish Massage | Code Stitch Web Designs'
+description: 'Meta description for the page'
+permalink: 'treatment/swedish-massage/'
+eleventyNavigation:
+    key: Swedish Massage
+    order: 3400
+    parent: Popular Treatments
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1362">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-background">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 576, height: 1040}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 576, height: 1040}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 576, height: 1040}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1168, height: 1040}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1168, height: 1040}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1168, height: 1040}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1172, height: 1578}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1172, height: 1578}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1172, height: 1578}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1172, height: 1578}) | jpeg %}" alt="massage" width="586" height="789" loading="lazy" decoding="async">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Why choose us</span>
+            <h2 class="cs-title">Why Choose Our Professional Digital Solutions</h2>
+            <p class="cs-text">
+                On the other hand, we denounce with righteous indignation dislike men who areso beguiled and demoralized by the charms of pleasure moment blinded by desire that they cannot foresee. 
+            </p>
+            <p class="cs-text">
+                On the other hand, we denounce with righteous indignation dislike men who areso beguiled and demoralized by the charms of pleasure moment blinded by desire that they cannot foresee. 
+            </p>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/tick.svg" alt="icon" width="32" height="32">
+                        Stress relief
+                    </h3>
+                    <p class="cs-item-text">
+                        Calming oils like lavender or chamomile can help reduce stress and promote mental relaxation.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/tick.svg" alt="icon" width="32" height="32">
+                        Pain management
+                    </h3>
+                    <p class="cs-item-text">
+                        Oils like peppermint and eucalyptus may help alleviate muscle aches and joint pain.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/tick.svg" alt="icon" width="32" height="32">
+                        Enhanced circulation
+                    </h3>
+                    <p class="cs-item-text">
+                        Massage combined with oils like rosemary can stimulate blood flow.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/tick.svg" alt="icon" width="32" height="32">
+                        Improved mood
+                    </h3>
+                    <p class="cs-item-text">
+                        Citrus oils like orange or lemon are often used to boost energy and mood.
+                    </p>
+                </li>
+            </ul>
+            <a href="{{client.onlineBooking}}" target="_blank" rel="noopener" class="cs-button-solid">Book Now</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

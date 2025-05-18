@@ -1,3 +1,137 @@
+
+/*-- -------------------------- -->
+<---           Table            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #table-1669 {
+        padding: var(--sectionPadding);
+    
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+            width: 100%;
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+        }
+    
+        .cs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cs-th {
+            padding: (12/16rem) (16/16rem);
+            box-sizing: border-box;
+        }
+
+        .cs-td {
+            padding: (8/16rem) (16/16rem);
+            box-sizing: border-box;
+        }
+      
+        .cs-th, .cs-td {
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    
+        .cs-color {
+            .cs-th {
+                &:first-child {
+                    color: #fff;
+                    background-color: var(--primary);
+                }
+            }
+        }
+    
+        .cs-th:first-child, .cs-td:first-child {
+            position: sticky;
+            left: 0;
+            z-index: 100; /* Make sure it sits above the other cells */
+            background-color: #F8F5F1;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+      
+        .cs-th {
+           background-color: #F8F5F1;
+        }
+
+        .cs-tr {
+            color: var(--bodyTextColor);
+        }
+
+        .cs-icon {
+            height: (16/16rem);
+            width: auto;
+        }
+    }
+}
+
+/* Tablet - 600px */
+@media screen and (max-width: 37.5rem) {
+    #table-1669 {
+        .cs-table {
+            display: block;
+            overflow-x: auto;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #table-1669 {
+            .cs-th {
+                background-color: rgba(0, 0, 0, .6);
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-th:first-child, .cs-td:first-child {
+                background-color: rgba(0, 0, 0, .6);
+                border-color: rgba(255, 3255, 255, .2);
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-th, .cs-td {
+                border-color: rgba(255, 3255, 255, .2);
+            }
+
+            .cs-color {
+                .cs-th {
+                    &:first-child {
+                        color: #fff;
+                        background-color: var(--secondary);
+                    }
+                }
+            }
+
+            .cs-tr {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-icon {
+                filter: grayscale(1) brightness(1000%);
+            }
+        }
+    }
+}
+                                
+
 /*-- ---------------------------------------------------------------- -->
 <---                         SBS Pricing                              -->
 <--- ---------------------------------------------------------------- -*/

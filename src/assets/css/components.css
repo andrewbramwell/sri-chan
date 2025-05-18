@@ -1,449 +1,271 @@
 /*-- -------------------------- -->
-<---       Why choose 687       -->
+<---          Services          -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #process-687 {
+  #services-1498 {
     padding: var(--sectionPadding);
-    /* Centers button */
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  #services-1498 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 56.25rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 15;
+  }
+  #services-1498 .cs-content {
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    width: 100%;
+    /* set text align to left if content needs to be left aligned */
     text-align: center;
-    background-color: #1a1a1a;
+  }
+  #services-1498 .cs-title {
+    max-width: 23ch;
+  }
+  #services-1498 .cs-card-group {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #services-1498 .cs-item {
+    text-align: center;
+    list-style: none;
+    max-width: 21.25rem;
+    /* 16px - 24px */
+    padding: 1.5rem clamp(1rem, 2.4vw, 1.5rem);
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+    /* 40px - 60px */
+    border-radius: clamp(2.5rem, 5vw, 3.75rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s;
+  }
+  #services-1498 .cs-item:hover {
+    border-color: var(--secondary);
+  }
+  #services-1498 .cs-item:hover .cs-picture img {
+    transform: scale(1.2);
+  }
+  #services-1498 .cs-item:hover .cs-h3,
+  #services-1498 .cs-item:hover .cs-link {
+    color: var(--primary);
+  }
+  #services-1498 .cs-item:hover .cs-arrow {
+    filter: initial;
+  }
+  #services-1498 .cs-image-group {
+    /* done in ems so we can use font size to scale it on desktop */
+    width: 16.0625em;
+    height: 12.5em;
+    /* 16px - 24px */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.5rem);
     position: relative;
     z-index: 1;
   }
-  #process-687 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #process-687 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #process-687 .cs-title,
-  #process-687 .cs-text {
-    color: var(--bodyTextColorWhite);
-  }
-  #process-687 .cs-text {
-    opacity: 0.8;
-  }
-  #process-687 .cs-card-group {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    column-gap: 1.25rem;
-    row-gap: 2.5rem;
-  }
-  #process-687 .cs-item {
-    list-style: none;
-    width: 100%;
-    max-width: 25.8125rem;
-  }
-  #process-687 .cs-picture {
-    width: 6.25rem;
-    height: 6.25rem;
-    margin: auto;
-    margin-bottom: 1.5rem;
-    background-color: #fdfaf8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #process-687 .cs-icon {
-    width: auto;
-    height: 2.375rem;
-    display: block;
-    fill: var(--primary);
-  }
-  #process-687 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 3vw, 1.5625rem);
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 0.75rem;
-    color: #fff;
-  }
-  #process-687 .cs-item-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #process-687 .cs-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.02;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-    z-index: -1;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #process-687 .cs-card-group {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #process-687 {
-    background-color: #1a1a1a;
-  }
-}
-/*-- -------------------------- -->
-<---       Why Choose 1313      -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #why-choose-1313 {
-    padding: var(--sectionPadding);
+  #services-1498 .cs-picture {
     position: relative;
-    background: #f7f7f7;
-    z-index: 10;
-  }
-  #why-choose-1313 .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 34.375rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #why-choose-1313 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #why-choose-1313 .cs-title {
-    max-width: 20ch;
-  }
-  #why-choose-1313 .cs-text {
-    max-width: 32.625rem;
-  }
-  #why-choose-1313 .cs-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* 20px - 40px */
-    gap: clamp(1.25rem, 3vw, 2.5rem);
-  }
-  #why-choose-1313 .cs-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  #why-choose-1313 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    color: var(--headerColor);
     display: block;
-  }
-  #why-choose-1313 .cs-li-text {
-    /* 14px 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #why-choose-1313 .cs-flex {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* changes to 20px at desktop */
-    gap: 2rem;
-  }
-  #why-choose-1313 .cs-image-group {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.3vw, 1.25rem);
-  }
-  #why-choose-1313 .cs-picture {
-    width: 100%;
-    height: 100vw;
-    max-height: 25rem;
-    display: block;
-    position: relative;
-  }
-  #why-choose-1313 .cs-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #why-choose-1313 .cs-container {
-    max-width: 80rem;
-  }
-  #why-choose-1313 .cs-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 1.25rem;
-  }
-  #why-choose-1313 .cs-title {
-    margin: 0;
-  }
-  #why-choose-1313 .cs-flex-group {
-    width: 50%;
-    /* prevents flexbox from squishing it */
-    flex: none;
-  }
-  #why-choose-1313 .cs-ul {
-    flex-direction: row;
-  }
-  #why-choose-1313 .cs-image-group {
-    flex-wrap: nowrap;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #why-choose-1313 .cs-flex {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-  #why-choose-1313 .cs-ul {
-    max-width: 20.3125rem;
-    flex-direction: column;
-    align-self: flex-end;
-  }
-  #why-choose-1313 .cs-image-group {
-    max-width: 52.875rem;
-    align-items: stretch;
-  }
-  #why-choose-1313 .cs-picture {
-    min-height: 25rem;
-    height: 100%;
-    max-height: 100%;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #why-choose-1313 {
-    background: var(--darker);
-  }
-  body.dark-mode #why-choose-1313 .cs-title,
-  body.dark-mode #why-choose-1313 .cs-text,
-  body.dark-mode #why-choose-1313 .cs-li-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #why-choose-1313 .cs-h3 {
-    color: var(--secondary);
-  }
-  body.dark-mode #why-choose-1313 .cs-text,
-  body.dark-mode #why-choose-1313 .cs-li-text {
-    opacity: 0.8;
-  }
-}
-/*-- -------------------------- -->
-<---       Why Choose 1631        -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #why-choose-1631 {
-    padding: var(--sectionPadding);
-  }
-  #why-choose-1631 .cs-container {
-    width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 34.375rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 7vw, 4rem);
-  }
-  #why-choose-1631 .cs-flex {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 7vw, 4rem);
-  }
-  #why-choose-1631 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    max-width: 38rem;
-    /* prevents padding from affecting width and height */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #why-choose-1631 .cs-text {
-    margin-bottom: 1rem;
-  }
-  #why-choose-1631 .cs-text:last-of-type {
-    margin-bottom: 0rem;
-  }
-  #why-choose-1631 .cs-picture {
-    display: block;
-    position: relative;
-    width: 100%;
-    max-width: 39.375rem;
-    /* chnages to auto at tablet */
-    height: 50vw;
-    /* removed at tablet */
-    max-height: 25rem;
-    /* clips img tag corners */
+    /* clips the image from overflowing parent on hover */
     overflow: hidden;
-    /* sends it to the 2nd posiiton in the bottom */
-    order: 2;
   }
-  #why-choose-1631 .cs-picture img {
+  #services-1498 .cs-picture img {
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: transform 0.65s;
   }
-  #why-choose-1631 .cs-card-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: stretch;
-    /* 16px - 20px */
-    column-gap: clamp(1rem, 2.5vw, 2rem);
-    row-gap: 1.75rem;
+  #services-1498 .cs-mask {
+    /* SVG Colors */
+    --maskBorder: #e8e8e8;
+    --maskBG: #fff;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
   }
-  #why-choose-1631 .cs-item {
-    list-style: none;
+  #services-1498 .cs-info {
     display: flex;
-    grid-column: span 12;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
   }
-  #why-choose-1631 .cs-h3 {
+  #services-1498 .cs-h3 {
     /* 20px - 25px */
-    font-size: clamp(1.25rem, 3vw, 1.5625rem);
-    line-height: 1.2em;
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    text-align: inherit;
+    line-height: 1.5em;
     font-weight: 700;
-    margin: 0;
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
     color: var(--headerColor);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.75rem;
+    transition: background-color 0.3s;
     transition: color 0.3s;
   }
-  #why-choose-1631 .cs-wrapper {
-    width: 3rem;
-    height: 3rem;
-    border: 1px solid var(--primary);
+  #services-1498 .cs-ages {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--secondary);
+  }
+  #services-1498 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: inherit;
+    line-height: 1.5em;
+    max-width: 50ch;
+    /* 16px - 24px */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.5rem);
+    width: 100%;
+    color: var(--bodyTextColor);
+  }
+  #services-1498 .cs-link {
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: inherit;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color 0.3s;
   }
-  #why-choose-1631 .cs-h3-icon {
-    width: 1.5rem;
-    height: auto;
-    margin-top: 2px;
+  #services-1498 .cs-link:hover .cs-arrow {
+    transform: translateX(0.25rem);
+  }
+  #services-1498 .cs-arrow {
     display: block;
-    /* change color of svg icon */
-    fill: var(--primary);
+    height: auto;
+    width: 1.25rem;
+    transition: filter 0.3s, transform 0.3s;
   }
-  #why-choose-1631 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-    transition: color 0.3s, opacity 0.3s;
+  #services-1498 .cs-hills {
+    /* hills Color */
+    --hillBG: #F8F5F1;
+    width: 150%;
+    min-width: 120rem;
+    height: auto;
+    position: absolute;
+    /* positions off the top at tablet */
+    bottom: -6.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #services-1498 .cs-wrapper {
+    width: 140vw;
+    max-width: 91.375rem;
+    height: 70%;
+    display: none;
+    position: absolute;
+    /* 60px - 100px (same as the padding bottom of the section ) */
+    bottom: clamp(3.75rem, 7.82vw, 6.25rem);
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+  }
+  #services-1498 .cs-floater {
+    position: absolute;
+  }
+  #services-1498 .cs-floater1 {
+    left: 0;
+    top: -13.75rem;
+  }
+  #services-1498 .cs-floater2 {
+    bottom: -3.125rem;
+    right: 0;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #why-choose-1631 .cs-container {
+  #services-1498 .cs-container {
     max-width: 80rem;
   }
-  #why-choose-1631 .cs-flex {
+  #services-1498 .cs-card-group {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  #why-choose-1631 .cs-content {
-    width: 50%;
-    /* 32px - 56px top and bottom */
-    padding: clamp(2rem, 4vw, 3.5rem) 0;
-    align-self: center;
-    flex: none;
+  #services-1498 .cs-item {
+    width: 31.5%;
   }
-  #why-choose-1631 .cs-picture {
-    width: 47vw;
-    min-height: 25rem;
-    max-height: 100%;
-    height: auto;
-    /* sends it to the left in the 1st position */
-    order: -1;
-    position: relative;
+  #services-1498 .cs-image-group {
+    /* scaling it down so it all fits proportionally */
+    font-size: min(1.2vw, 1em);
   }
-  #why-choose-1631 .cs-item {
-    grid-column: span 4;
+  #services-1498 .cs-wrapper {
+    display: block;
+  }
+  #services-1498 .cs-hills {
+    top: 65%;
+    bottom: auto;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #why-choose-1631 .cs-title,
-  body.dark-mode #why-choose-1631 .cs-text,
-  body.dark-mode #why-choose-1631 .cs-h3,
-  body.dark-mode #why-choose-1631 .cs-item-text {
+  body.dark-mode #services-1498 {
+    background-color: var(--medium);
+  }
+  body.dark-mode #services-1498 .cs-title,
+  body.dark-mode #services-1498 .cs-text,
+  body.dark-mode #services-1498 .cs-item-text,
+  body.dark-mode #services-1498 .cs-h3,
+  body.dark-mode #services-1498 .cs-link {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #why-choose-1631 .cs-text,
-  body.dark-mode #why-choose-1631 .cs-item-text {
+  body.dark-mode #services-1498 .cs-text,
+  body.dark-mode #services-1498 .cs-item-text {
     opacity: 0.8;
   }
-  body.dark-mode #why-choose-1631 .cs-picture:before {
-    background-color: var(--accent);
+  body.dark-mode #services-1498 .cs-arrow {
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #services-1498 .cs-item {
+    background-color: var(--dark);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  body.dark-mode #services-1498 .cs-item:hover {
+    border-color: var(--secondary);
+  }
+  body.dark-mode #services-1498 .cs-mask {
+    --maskBG: var(--dark);
+    --maskBorder: var(--secondary);
+  }
+  body.dark-mode #services-1498 .cs-hills {
+    opacity: 0.23;
+    --hillBG: #fff;
   }
 }
 /*-- -------------------------- -->
@@ -518,6 +340,7 @@
     height: clamp(3.75rem, 7vw, 5rem);
     margin: 0;
     box-sizing: border-box;
+    border-radius: 50%;
     border: 1px solid var(--primary);
     display: flex;
     justify-content: center;
@@ -613,6 +436,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 1em;
   }
   #why-choose-1635 .cs-picture1 {
     width: 100%;
@@ -750,547 +574,18 @@
   }
 }
 /*-- -------------------------- -->
-<---      Why Choose 1658       -->
+<---    Side By Side Reverse    -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #why-choose-1658 {
+  #sbsr-1007 {
     padding: var(--sectionPadding);
-    background-color: #F3F3F4;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
+    padding-top: 0;
   }
-  #why-choose-1658 .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 36.5rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 100px */
-    gap: clamp(3rem, 10vw, 6.25rem);
-  }
-  #why-choose-1658 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #why-choose-1658 .cs-flex {
-    max-width: 38.5rem;
-  }
-  #why-choose-1658 .cs-title {
-    max-width: 20ch;
-    margin-bottom: 1.5rem;
-  }
-  #why-choose-1658 .cs-ul {
-    width: 100%;
-    max-width: 32.625rem;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    /* 28px - 32px */
-    gap: clamp(1.75rem, 3vw, 2rem);
-  }
-  #why-choose-1658 .cs-li {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  #why-choose-1658 .cs-number {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    color: var(--primary);
-    display: block;
-  }
-  #why-choose-1658 .cs-li-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #why-choose-1658 .cs-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* 40px - 64px */
-    gap: clamp(2.5rem, 6vw, 4rem);
-    position: relative;
-    z-index: 1;
-  }
-  #why-choose-1658 .cs-wrapper:before {
-    /* white background */
-    content: '';
-    width: 100vw;
-    height: 500%;
-    background: #fff;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    /* 40px - 140px */
-    top: clamp(2.5rem, 10vw, 8.75rem);
-    left: 50%;
-    z-index: -1;
-    transform: translateX(-50%);
-  }
-  #why-choose-1658 .cs-picture {
-    width: 100%;
-    height: 70vw;
-    max-height: 25rem;
-    display: block;
-    position: relative;
-    z-index: 1;
-  }
-  #why-choose-1658 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #why-choose-1658 .cs-quote {
-    /* 62px - 100px */
-    width: clamp(3.875rem, 7vw, 6.25rem);
-    height: auto;
-    margin-bottom: -1.75rem;
-    opacity: 0.4;
-    position: relative;
-    z-index: -1;
-  }
-  #why-choose-1658 .cs-review {
-    --quoteColor: var(--primary);
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 3vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    width: 100%;
-    max-width: 32.625rem;
-    margin: 0;
-    color: var(--headerColor);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #why-choose-1658 .cs-container {
-    max-width: 80rem;
-    gap: 0;
-  }
-  #why-choose-1658 .cs-content {
-    padding-bottom: 6.25rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  #why-choose-1658 .cs-flex {
-    text-align: left;
-    width: 40vw;
-    max-width: 39.375rem;
-    flex: none;
-    /* sends it to the right in the 2nd position */
-    order: 2;
-  }
-  #why-choose-1658 .cs-title {
-    margin: 0;
-  }
-  #why-choose-1658 .cs-wrapper {
-    /* -60px to -140px */
-    margin-top: calc(clamp(3.75rem, 10vw, 8.75rem)*-1);
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-  }
-  #why-choose-1658 .cs-picture {
-    width: 43vw;
-    max-width: 39.375rem;
-    height: auto;
-    /* 252px - 414px */
-    min-height: clamp(15.75rem, 30vw, 25.875rem);
-    max-height: 100%;
-    /* prevents flexbox from squishing it */
-    flex: none;
-    /* sends it to the right in the 2nd position */
-    order: 2;
-  }
-  #why-choose-1658 .cs-review {
-    /* 100px - 235px */
-    /* pushes up against the container so there's always that gap between the top of the review and the container */
-    margin-top: clamp(6.25rem, 20vw, 14.5rem);
-    align-self: flex-end;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #why-choose-1658 {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  body.dark-mode #why-choose-1658 .cs-title,
-  body.dark-mode #why-choose-1658 .cs-li-text,
-  body.dark-mode #why-choose-1658 .cs-review {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #why-choose-1658 .cs-li-text {
-    opacity: 0.8;
-  }
-  body.dark-mode #why-choose-1658 .cs-wrapper:before {
-    background-color: var(--dark);
-  }
-}
-/*-- -------------------------- -->
-<---       Services 343         -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #services-343 {
-    padding: var(--sectionPadding);
-  }
-  #services-343 .cs-container {
-    width: 100%;
-    /* changes to 1440px at tablet */
-    max-width: 34.375rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #services-343 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #services-343 .cs-card-group {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* 16px - 20px */
-    gap: clamp(1rem, 1.6vw, 1.25rem);
-  }
-  #services-343 .cs-item {
-    list-style: none;
-    width: 100%;
-    max-width: 31.25rem;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-    transition: box-shadow 0.3s, transform 0.3s;
-  }
-  #services-343 .cs-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transform: translateY(-0.4375rem);
-  }
-  #services-343 .cs-item:hover .cs-picture img {
-    opacity: 0.3;
-    transform: scale(1.1);
-  }
-  #services-343 .cs-item:hover .cs-h3 {
-    color: var(--primaryLight);
-  }
-  #services-343 .cs-item:before {
-    /* border, done in pseudo so it can sit under the picture */
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    border: 1px solid #e8e8e8;
-    /* prevents border from affecting height and width */
-    box-sizing: border-box;
-    background: transparent;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-343 .cs-link {
-    text-decoration: none;
-    /* 16px - 24px */
-    padding-bottom: clamp(1rem, 2.2vw, 1.5rem);
-    display: block;
-  }
-  #services-343 .cs-picture {
-    width: 100%;
-    height: 15rem;
-    /* 16px - 24px */
-    margin-bottom: clamp(1rem, 2.2vw, 1.5rem);
-    border-radius: 0.5rem 0.5rem 0 0;
-    background-color: var(--primaryLight);
-    /* clips the img tag corners */
-    overflow: hidden;
-    display: block;
-    position: relative;
-    z-index: 10;
-  }
-  #services-343 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.6s, opacity 0.3s;
-  }
-  #services-343 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 3vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    color: var(--headerColor);
-    margin: 0 0 0.75rem 0;
-    /* 16px - 24px */
-    padding: 0 clamp(1rem, 2vw, 1.5rem);
-    transition: color 0.3s;
-  }
-  #services-343 .cs-item-text {
-    /* 14px - 16px  */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    margin: 0;
-    /* 16px - 24px */
-    padding: 0 clamp(1rem, 2.2vw, 1.5rem);
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-343 .cs-container {
-    max-width: 90rem;
-  }
-  #services-343 .cs-card-group {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-  #services-343 .cs-item {
-    width: 48.9%;
-  }
-}
-/* Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #services-343 .cs-item {
-    /* we do this so it's stackable. You can add any number of reviews you want and they will stack and center in the middle. We dont use grid because if you have an odd number of reviews, they don't stay centered.  They align with their grid lines. If you want 4 reviews in a row, lower the width under 22.5vw or 23% to get the desired sizes fit 4 in a row and then stack when you add more */
-    width: clamp(23.8%, 23vw, 23.95%);
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-343 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #services-343 .cs-title,
-  body.dark-mode #services-343 .cs-text,
-  body.dark-mode #services-343 .cs-h3,
-  body.dark-mode #services-343 .cs-item-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #services-343 .cs-item {
-    background-color: var(--medium);
-  }
-  body.dark-mode #services-343 .cs-item:before {
-    opacity: 0.3;
-  }
-}
-/*-- -------------------------- -->
-<---       Services 877         -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #services-877 {
-    padding: var(--sectionPadding);
-  }
-  #services-877 .cs-container {
-    width: 100%;
-    /* changes to 1280px at Tablet */
-    max-width: 49rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #services-877 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #services-877 .cs-title {
-    /* max width of 22 characters, includes spaces between words */
-    max-width: 39ch;
-  }
-  #services-877 .cs-text {
-    max-width: 66.5rem;
-  }
-  #services-877 .cs-card-group {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-  }
-  #services-877 .cs-item {
-    text-align: center;
-    list-style: none;
-    width: 100%;
-    max-width: 31.25rem;
-    border-radius: 1rem;
-    background-color: #fff;
-    overflow: hidden;
-    grid-column: span 3;
-    position: relative;
-    z-index: 1;
-    transition: box-shadow 0.3s, transform 0.3s;
-  }
-  #services-877 .cs-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transform: translateY(-0.4375rem);
-  }
-  #services-877 .cs-item:hover .cs-picture img {
-    opacity: 0.3;
-    transform: scale(1.1);
-  }
-  #services-877 .cs-item:hover .cs-h3 {
-    color: var(--primaryLight);
-  }
-  #services-877 .cs-item:before {
-    /* border, done in pseudo so it can sit under the picture */
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    border: 1px solid #e8e8e8;
-    /* prevents border from affecting height and width */
-    box-sizing: border-box;
-    background: transparent;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-877 .cs-link {
-    text-decoration: none;
-    padding: 0 0 1.25rem 0;
-    display: block;
-  }
-  #services-877 .cs-picture {
-    width: 100%;
-    height: 12.5rem;
-    margin-bottom: 1.25rem;
-    background-color: var(--primaryLight);
-    /* clips the img tag corners */
-    overflow: hidden;
-    display: block;
-    position: relative;
-    z-index: 10;
-  }
-  #services-877 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.6s, opacity 0.3s;
-  }
-  #services-877 .cs-h3 {
-    font-size: 1.25rem;
-    text-align: inherit;
-    line-height: 1.2em;
-    font-weight: 700;
-    color: var(--headerColor);
-    margin: 0 0 0.75rem 0;
-    /* 16px - 24px */
-    padding: 0 clamp(1rem, 2vw, 1.5rem);
-    transition: color 0.3s;
-  }
-  #services-877 .cs-item-text {
-    /* 14px - 16px  */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    text-align: inherit;
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    margin: 0;
-    padding: 0 1.25rem;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-877 .cs-container {
-    max-width: 80rem;
-  }
-  #services-877 .cs-item {
-    grid-column: span 1;
-    max-width: 28.875rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-877 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #services-877 .cs-title,
-  body.dark-mode #services-877 .cs-text,
-  body.dark-mode #services-877 .cs-h3,
-  body.dark-mode #services-877 .cs-item-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #services-877 .cs-text,
-  body.dark-mode #services-877 .cs-item-text {
-    opacity: 0.8;
-  }
-  body.dark-mode #services-877 .cs-item {
-    background-color: var(--medium);
-  }
-  body.dark-mode #services-877 .cs-item:before {
-    opacity: 0.3;
-  }
-}
-/*-- -------------------------- -->
-<---        Services 879        -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #services-879 {
-    padding: var(--sectionPadding);
-    /* clips the svg wave from overflowing */
-    background-color: #f7f7f7;
-  }
-  #services-879 .cs-container {
+  #sbsr-1007 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
-    max-width: 34.375rem;
+    max-width: 50rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1298,479 +593,140 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-879 .cs-content {
+  #sbsr-1007 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    text-align: left;
     width: 100%;
+    /* changes to 522px at desktop */
+    max-width: 36.125rem;
+    margin-top: -1rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
+    align-items: flex-start;
   }
-  #services-879 .cs-card-group {
+  #sbsr-1007 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbsr-1007 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbsr-1007 .cs-spacer {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
-    position: relative;
-    z-index: 1;
-  }
-  #services-879 .cs-item {
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    grid-column: span 6;
-  }
-  #services-879 .cs-link {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    height: 26.25rem;
-    padding: 1.25rem;
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    border-radius: 1rem;
-    /* clips img corners around the border */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.75rem;
-    position: relative;
-  }
-  #services-879 .cs-h3 {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    text-align: inherit;
-    font-weight: 700;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #services-879 .cs-item-p {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: inherit;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #services-879 .cs-background {
-    width: 100%;
-    height: 100%;
+    /* 16px - 24px */
+    height: clamp(1rem, 3vw, 1.5rem);
     display: block;
+  }
+  #sbsr-1007 .cs-image-group {
+    width: 100%;
+  }
+  #sbsr-1007 .cs-picture {
+    width: 100%;
+    height: 16.3125rem;
+    border: 12px solid #fff;
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
+  #sbsr-1007 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    object-fit: cover;
-  }
-  #services-879 .cs-background:before {
-    /* gradient overlay */
-    content: "";
-    width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, #000000 10.13%, rgba(0, 0, 0, 0) 40.71%);
-    opacity: 1;
-    position: absolute;
+    width: 100%;
+    /* makes it behave like a background image */
+    object-fit: cover;
+    border-radius: 1em;
+  }
+  #sbsr-1007 .cs-seal {
+    /* changes to a clamp(104px - 190px) at desktop */
+    width: 6.5rem;
+    height: auto;
+    /* 104px - 190px */
+    /* wrapped clamp in calc function to make the value negative, and multiply by half (.5) the height to it always overlaps the bg image by half its height */
+    margin-top: calc(clamp(6.5rem, 12vw, 11.875rem)*-.5);
+    margin-left: auto;
+    /* 28px - 120px */
+    margin-right: clamp(1.75rem, 10vw, 7.5rem);
+    background-color: #fff;
+    border: clamp(6px, 0.8vw, 12px) solid #fff;
+    border-radius: 50%;
     display: block;
-    bottom: 0;
-    left: 0;
-    transition: height 0.3s;
-  }
-  #services-879 .cs-background img {
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
     position: relative;
-    z-index: -1;
-    transition: transform 0.6s;
+    /* make it rest on top of the bg picture */
+    z-index: 10;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-879 .cs-item {
-    grid-column: span 3;
+  #sbsr-1007 .cs-container {
+    align-items: flex-start;
   }
-  #services-879 .cs-item:last-of-type {
-    grid-column: span 6;
+  #sbsr-1007 .cs-flex-group {
+    flex-direction: row;
+  }
+  #sbsr-1007 .cs-text {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+  #sbsr-1007 .cs-spacer {
+    display: none;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #services-879 .cs-container {
+  #sbsr-1007 .cs-container {
     max-width: 80rem;
-  }
-  #services-879 .cs-item {
-    grid-column: span 2;
-  }
-  #services-879 .cs-item:last-of-type {
-    grid-column: span 2;
-  }
-  #services-879 .cs-link:hover .cs-h3,
-  #services-879 .cs-link:focus-within .cs-h3 {
-    color: var(--primary);
-    transform: translateY(0);
-  }
-  #services-879 .cs-link:hover .cs-item-p,
-  #services-879 .cs-link:focus-within .cs-item-p {
-    height: auto;
-    opacity: 1;
-    transform: translateY(0);
-  }
-  #services-879 .cs-link:hover .cs-background:before,
-  #services-879 .cs-link:focus-within .cs-background:before {
-    height: 180%;
-  }
-  #services-879 .cs-link:hover .cs-background img,
-  #services-879 .cs-link:focus-within .cs-background img {
-    transform: scale(1.1);
-  }
-  #services-879 .cs-h3 {
-    /* transform down the same amount as the flex gap */
-    transform: translateY(0.75rem);
-    transition: transform 0.3s, color 0.3s;
-  }
-  #services-879 .cs-item-p {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(3.125rem);
-    transition: height 0.3s, opacity 0.3s, transform 0.3s;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-879 {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #services-879 .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #services-879 .cs-title,
-  body.dark-mode #services-879 .cs-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #services-879 .cs-text {
-    opacity: 0.8;
-  }
-}
-/*-- -------------------------- -->
-<---        Services 1251       -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #services-1251 {
-    padding: var(--sectionPadding);
-    position: relative;
-    z-index: 10;
-  }
-  #services-1251 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    flex-direction: column;
-    gap: clamp(3rem, 6vw, 4rem);
+    /* 100px - 200px */
+    gap: clamp(6.25rem, 13vw, 12.5rem);
   }
-  #services-1251 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
+  #sbsr-1007 .cs-image-group {
+    max-width: 33.875rem;
     display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #services-1251 .cs-title {
-    max-width: 20ch;
-  }
-  #services-1251 .cs-card-group {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.5vw, 1.25rem);
-  }
-  #services-1251 .cs-item {
-    width: 100%;
-    text-align: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    border-radius: 0.5rem;
-    /* clips background image corners */
-    overflow: hidden;
-    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    grid-column: span 12;
-    grid-row: span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-end;
     position: relative;
-    z-index: 1;
+    /* sends it to the right in the 2nd position */
+    order: 2;
   }
-  #services-1251 .cs-item:hover .cs-item-background img {
-    opacity: 0.4;
-    transform: scale(1.3);
+  #sbsr-1007 .cs-picture {
+    height: 28.75rem;
+    aspect-ratio: initial;
   }
-  #services-1251 .cs-item:hover .cs-h3 {
-    color: var(--primary);
-  }
-  #services-1251 .cs-item:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    /* prevents border from affecting height and width */
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-    /* prevents the mouse from interacting with it so when you hover hover the other elements inside the card it doesn't block your mouse from hovering over them */
-    pointer-events: none;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-  #services-1251 .cs-link {
-    text-decoration: none;
-    /* 125px - 236px */
-    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
-    padding: clamp(7.8125rem, 19vw, 14.75rem) 1.5rem 1.5rem;
-  }
-  #services-1251 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: bold;
-    text-align: inherit;
-    margin: 0 0 0.75rem 0;
-    color: var(--bodyTextColorWhite);
-    transition: color 0.3s;
-  }
-  #services-1251 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    max-width: 28.125rem;
+  #sbsr-1007 .cs-seal {
+    /* 104 - 190px */
+    width: clamp(6.5rem, 13vw, 11.875rem);
     margin: 0;
-    padding: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #services-1251 .cs-item-background {
-    width: 100%;
-    height: 100%;
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    top: 50%;
+    /* subtract 12px (.75rem) to account for the border */
+    left: calc((clamp(6.5rem, 13vw, 11.875rem)*-.5) + -.75rem);
+    transform: translateY(-50%);
   }
-  #services-1251 .cs-item-background:before {
-    /* background color overlay */
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: #1a1a1a;
-    opacity: 0.24;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #services-1251 .cs-item-background:after {
-    /* background color overlay */
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
-    opacity: 0.4;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-  }
-  #services-1251 .cs-item-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-    transition: transform 0.6s, opacity 0.3s;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-1251 {
-    padding-bottom: 0;
-  }
-  #services-1251 .cs-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-  }
-  #services-1251 .cs-title {
-    margin: 0;
-  }
-  #services-1251 .cs-flex-group {
-    width: 50%;
-  }
-  #services-1251 .cs-item {
-    grid-column: span 4;
+  #sbsr-1007 .cs-content {
+    flex: none;
+    width: 54%;
+    max-width: 33.875rem;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #services-1251 .cs-title,
-  body.dark-mode #services-1251 .cs-text {
+  body.dark-mode #sbsr-1007 .cs-title,
+  body.dark-mode #sbsr-1007 .cs-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services-1251 .cs-text {
+  body.dark-mode #sbsr-1007 .cs-text {
     opacity: 0.8;
   }
-}
-/*-- -------------------------- -->
-<---       Services 2129        -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #services-2129 {
-    padding: var(--sectionPadding);
-    position: relative;
+  body.dark-mode #sbsr-1007 .cs-picture {
+    border-color: var(--dark);
+    background-color: var(--dark);
   }
-  #services-2129 .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 44rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #services-2129 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #services-2129 .cs-title {
-    margin: 0;
-  }
-  #services-2129 .cs-card-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    column-gap: clamp(1rem, 2.5vw, 1.25rem);
-    row-gap: 1.5rem;
-  }
-  #services-2129 .cs-item {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    grid-column: span 12;
-  }
-  #services-2129 .cs-item:hover .cs-picture img {
-    opacity: 0.3;
-    transform: scale(1.2);
-  }
-  #services-2129 .cs-link {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #services-2129 .cs-picture {
-    width: 100%;
-    height: 15rem;
-    margin-bottom: 0.75rem;
-    background-color: #000;
-    overflow: hidden;
-    display: block;
-    position: relative;
-  }
-  #services-2129 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.6s, opacity 0.3s;
-  }
-  #services-2129 .cs-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
-  }
-  #services-2129 .cs-item-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-2129 .cs-container {
-    max-width: 80rem;
-  }
-  #services-2129 .cs-item {
-    grid-column: span 3;
-  }
-  #services-2129 .cs-picture {
-    /* 180px - 340px */
-    height: clamp(11.25rem, 22.5vw, 21.25rem);
-    margin-bottom: 1.5rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-2129 {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #services-2129 .cs-title,
-  body.dark-mode #services-2129 .cs-h3,
-  body.dark-mode #services-2129 .cs-item-text {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #services-2129 .cs-item-text {
-    opacity: 0.8;
+  body.dark-mode #sbsr-1007 .cs-seal {
+    border-color: var(--dark);
+    background-color: var(--dark);
   }
 }
 /*-- -------------------------- -->
@@ -1778,10 +734,11 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-727 {
+  #reviews-567 {
     padding: var(--sectionPadding);
+    padding-top: 0;
   }
-  #reviews-727 .cs-container {
+  #reviews-567 .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 34.375rem;
@@ -1789,153 +746,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Change from flex-start to center */
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #reviews-727 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
+  #reviews-567 .cs-content {
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
-  }
-  #reviews-727 .cs-title {
-    max-width: 20ch;
-  }
-  #reviews-727 .cs-card-group {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
   }
-  #reviews-727 .cs-item {
-    list-style: none;
+  #reviews-567 .cs-card-group {
     width: 100%;
-    margin: 0;
-    /* 32px - 48px top & bottom */
-    /* 16px - 32px left & right */
-    padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
-    /* makes padding not affect height and width */
-    box-sizing: border-box;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #reviews-727 .cs-icon {
-    /* 30px - 40px */
-    width: clamp(1.875rem, 4vw, 2.5rem);
-    height: auto;
-    margin: 0 0 2rem 0;
-    display: block;
-    /* changes svg icon color */
-    fill: var(--primary);
-  }
-  #reviews-727 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 4vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0 0 1.5rem 0;
-    color: var(--headerColor);
-  }
-  #reviews-727 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 4vw, 1rem);
-    line-height: 1.5em;
-    margin: 0 0 3rem 0;
-    color: var(--bodyTextColor);
-  }
-  #reviews-727 .cs-name {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 500;
-    margin: auto 0 0 0;
-    color: var(--headerColor);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-    position: relative;
-  }
-  #reviews-727 .cs-name:before {
-    content: "";
-    width: 0.5rem;
-    height: 1px;
-    background: currentColor;
-    display: block;
-    position: relative;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #reviews-727 .cs-container {
-    max-width: 80rem;
-  }
-  #reviews-727 .cs-card-group {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #reviews-727 .cs-item {
-    width: 48.5%;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews-727 .cs-topper,
-  body.dark-mode #reviews-727 .cs-title,
-  body.dark-mode #reviews-727 .cs-text,
-  body.dark-mode #reviews-727 .cs-h3,
-  body.dark-mode #reviews-727 .cs-item-text,
-  body.dark-mode #reviews-727 .cs-name {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #reviews-727 .cs-text {
-    opacity: 0.8;
-  }
-  body.dark-mode #reviews-727 .cs-item {
-    background-color: var(--medium);
-  }
-}
-/*-- -------------------------- -->
-<---        Reviews 1673        -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #reviews-1673 {
-    padding: var(--sectionPadding);
-    position: relative;
-    z-index: 1;
-  }
-  #reviews-1673 .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 36.5rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* 40px - 64px */
-    gap: clamp(2.5rem, 4.5vw, 4rem);
-  }
-  #reviews-1673 .cs-content {
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #reviews-1673 .cs-title {
-    margin: 0rem;
-  }
-  #reviews-1673 .cs-card-group {
     padding: 0;
     margin: 0;
     display: flex;
@@ -1943,16 +768,17 @@
     align-items: center;
     flex-direction: column;
     /* 16px - 20px */
-    gap: clamp(1rem, 2.5vw, 1.25rem);
+    gap: clamp(1rem, 2.5vw, 1.15rem);
   }
-  #reviews-1673 .cs-item {
+  #reviews-567 .cs-item {
     list-style: none;
     width: 100%;
     max-width: 39.375rem;
-    /* 20px - 40px top & bottom */
-    /* 20px - 40px left & right */
-    padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
-    background-color: #f7f7f7;
+    /* 32px - 60px top & bottom */
+    /* 16px - 48px left & right */
+    padding: clamp(2rem, 6.15vw, 3.75rem) clamp(1rem, 4.15vw, 3rem);
+    background-color: #F8F5F1;
+    border-radius: 1em;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
     display: flex;
@@ -1960,24 +786,44 @@
     align-items: flex-start;
     flex-direction: column;
     position: relative;
-    /* 24px - 48px */
-    gap: clamp(1.5rem, 4vw, 3rem);
   }
-  #reviews-1673 .cs-flex-group {
-    /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
-    margin-top: auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-  #reviews-1673 .cs-profile {
-    width: 3.25rem;
-    height: 3.25rem;
-    border-radius: 50%;
-    position: relative;
+  #reviews-567 .cs-stars {
+    /* 169px - 189px */
+    width: clamp(10.5625rem, 20vw, 11.8125rem);
+    height: auto;
+    /* 20px - 24px */
+    margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
     display: block;
   }
-  #reviews-1673 .cs-profile img {
+  #reviews-567 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    /* 40px - 64px */
+    margin-bottom: clamp(2.5rem, 8vw, 4rem);
+    color: var(--bodyTextColor);
+  }
+  #reviews-567 .cs-flex-group {
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  #reviews-567 .cs-profile {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    /* clips image corners to make circle */
+    overflow: hidden;
+    position: relative;
+    display: block;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  #reviews-567 .cs-profile img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1986,107 +832,168 @@
     /* makes the image behave like a background image */
     object-fit: cover;
   }
-  #reviews-1673 .cs-name {
-    /* 20px - 25px */
-    font-size: 1.25rem;
-    line-height: 1.2em;
+  #reviews-567 .cs-name {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
     font-weight: 700;
-    margin: 0;
-    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
-    margin-top: auto;
+    margin: 0 0 0.5rem 0;
     color: var(--headerColor);
     display: block;
-  }
-  #reviews-1673 .cs-job {
-    /* 14px - 16px */
-    font-size: 1rem;
-    line-height: 1.5em;
-    font-weight: 400;
-    margin: 0;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #reviews-1673 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  #reviews-1673 .cs-item-stars {
-    width: 6.75rem;
-    height: auto;
-  }
-  #reviews-1673 .cs-review {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.6vw, 1.25rem);
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-    z-index: 1;
-  }
-  #reviews-1673 .cs-quote {
-    width: 5.375rem;
-    height: auto;
-    position: absolute;
-    right: 0rem;
-    bottom: 0rem;
-    z-index: 0;
-    /* changes quote svg color */
-    fill: #e8e8e8;
-  }
-  #reviews-1673 .cs-background {
-    display: none;
-    position: absolute;
-    left: 50%;
-    /* changes to 40px at 1300px */
-    right: 1rem;
-    top: 2.5rem;
-    bottom: 2.5rem;
-    z-index: -1;
-  }
-  #reviews-1673 .cs-background img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews-1673 .cs-container {
+  #reviews-567 .cs-container {
     max-width: 80rem;
   }
-  #reviews-1673 .cs-card-group {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+  #reviews-567 .cs-card-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: clamp(1rem, 2.5vw, 1.15rem);
+    width: 100%;
   }
-  #reviews-1673 .cs-background {
-    display: block;
+  #reviews-567 .cs-item {
+    width: 100%;
+    /* Take full width of grid cell */
+    max-width: 100%;
   }
 }
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #reviews-1673 .cs-background {
-    right: 2.5rem;
+/* Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+  #reviews-567 .cs-card-group {
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns on desktop */
+  }
+  #reviews-567 .cs-item {
+    width: 100%;
+    align-items: flex-start;
+  }
+  #reviews-567 .cs-item:last-of-type {
+    align-items: flex-start;
+  }
+  #reviews-567 .cs-item:last-of-type .cs-item-text {
+    text-align: left;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews-1673 .cs-title,
-  body.dark-mode #reviews-1673 .cs-review,
-  body.dark-mode #reviews-1673 .cs-name {
+  body.dark-mode #reviews-567 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #reviews-567 .cs-title,
+  body.dark-mode #reviews-567 .cs-text,
+  body.dark-mode #reviews-567 .cs-item-text,
+  body.dark-mode #reviews-567 .cs-name,
+  body.dark-mode #reviews-567 .cs-job {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #reviews-1673 .cs-item {
-    background-color: var(--medium);
+  body.dark-mode #reviews-567 .cs-text {
+    opacity: 0.8;
   }
-  body.dark-mode #reviews-1673 .cs-job {
+  body.dark-mode #reviews-567 .cs-item {
+    background-color: var(--accent);
+  }
+}
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-402 {
+    padding: var(--sectionPadding);
+    background-color: #F8F5F1;
+  }
+  #gallery-402 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #gallery-402 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #gallery-402 .cs-gallery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+  }
+  #gallery-402 .cs-image {
+    width: 47%;
+    border-radius: 1.25rem;
+    display: block;
+    position: relative;
+    /* clips the image corners */
+    overflow: hidden;
+    aspect-ratio: 1;
+  }
+  #gallery-402 .cs-image img {
+    width: 100%;
+    height: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #gallery-402 .cs-container {
+    max-width: 80rem;
+  }
+  #gallery-402 .cs-image {
+    width: 31.8%;
+    max-width: 18.75rem;
+    aspect-ratio: 1;
+  }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #gallery-402 .cs-gallery {
+    justify-content: center;
+    align-items: stretch;
+  }
+  #gallery-402 .cs-image {
+    width: 39.375rem;
+    max-width: 100%;
+    height: 25rem;
+  }
+  #gallery-402 .cs-image:nth-of-type(2),
+  #gallery-402 .cs-image:nth-of-type(3),
+  #gallery-402 .cs-image:nth-of-type(4),
+  #gallery-402 .cs-image:nth-of-type(5) {
+    width: 19.0625rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-402 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #gallery-402 .cs-title,
+  body.dark-mode #gallery-402 .cs-text {
     color: var(--bodyTextColorWhite);
-    opacity: 0.7;
   }
-  body.dark-mode #reviews-1673 .cs-quote {
-    opacity: 0.2;
+  body.dark-mode #gallery-402 .cs-text {
+    opacity: 0.8;
   }
 }

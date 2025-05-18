@@ -1,24 +1,24 @@
 module.exports = {
     "name": "Splendid Sites Web Designs",
     "email": "help@splendidsites.com",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
-    "openingHours": "Mon-Sun: 9am-9pm",
-    "onlineBooking": "https://www.facebook.com/",
+    "phoneForTel": "+447789789765",
+    "phoneFormatted": "07789 789765",
+    "openingHours": "Mon-Sat: 10am-8pm, Sun: 10am-7pm",
+    "onlineBooking": "https://srichanthaimassage.setmore.com/srichan",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "country": "US",
-        "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
+        "lineOne": "Unit 6C Duck Farm Court",
+        "lineTwo": "Station Way W",
+        "city": "Aylesbury",
+        "state": "",
+        "zip": "HP20 2SQ",
+        "country": "UK",
+        "mapLink": "https://maps.app.goo.gl/Rz7cnHSWtm7FV1Sm8"
     },
     "socials": {
-        "facebook": "https://www.facebook.com/",
+        "facebook": "https://www.facebook.com/profile.php?id=61570130061696",
         "instagram": "https://www.instagram.com/",
-        "googleReview": "",
+        "googleReview": "https://g.page/r/CZBKwkOvkMfSEBM/review",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://sri-chan-thai-massage.co.uk"
 };
