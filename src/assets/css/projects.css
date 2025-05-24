@@ -53,7 +53,7 @@
     align-items: flex-start;
   }
   #sbs-1362 .cs-topper {
-    color: #767676;
+    color: var(--primary);
   }
   #sbs-1362 .cs-title {
     /* 23 characters wide including spaces */
@@ -274,7 +274,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #sbs-1362 .cs-topper {
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   body.dark-mode #sbs-1362 .cs-title,
   body.dark-mode #sbs-1362 .cs-text,
