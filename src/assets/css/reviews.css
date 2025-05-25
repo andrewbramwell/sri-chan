@@ -26,6 +26,10 @@
     /* set text align to left if content needs to be left aligned */
     text-align: center;
   }
+  #reviews-567 .cs-button-solid {
+    display: block;
+    margin: 0 auto;
+  }
   #reviews-567 .cs-card-group {
     width: 100%;
     padding: 0;
@@ -111,6 +115,10 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #reviews-567 .cs-button-solid {
+    display: block;
+    margin: 0 auto;
+  }
   #reviews-567 .cs-container {
     max-width: 80rem;
   }
@@ -129,6 +137,10 @@
 }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
+  #reviews-567 .cs-button-solid {
+    display: block;
+    margin: 0 auto;
+  }
   #reviews-567 .cs-card-group {
     grid-template-columns: repeat(3, 1fr);
     /* Three columns on desktop */
