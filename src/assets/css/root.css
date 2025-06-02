@@ -440,7 +440,7 @@ html {
     align-items: center;
   }
   #cs-navigation .cs-logo {
-    width: 13.0625rem;
+    width: 12.1875rem;
     height: auto;
     margin: 0 auto 0 0;
     padding: 0;
@@ -1038,7 +1038,7 @@ html {
   }
   #cs-navigation .cs-logo {
     width: 18.4%;
-    height: 2.5rem;
+    height: 3.125rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     padding: 0;
