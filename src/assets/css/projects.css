@@ -294,7 +294,7 @@
   body.dark-mode #sbs-1362 .cs-h3 {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-1362 .cs-icon {
+  body.dark-mode #sbs-1362 .cs-h3-icon {
     filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #sbs-1362 .cs-bubbles:before {
