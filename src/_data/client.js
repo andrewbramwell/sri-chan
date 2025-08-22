@@ -4,7 +4,7 @@ module.exports = {
     "phoneForTel": "+447789789765",
     "phoneFormatted": "07789 789765",
     "openingHours": "Mon-Sat: 10am-8pm, Sun: 10am-7pm",
-    "onlineBooking": "https://srichanthaimassage.setmore.com/srichan",
+    "onlineBooking": "https://srichanthaimassage.setmore.com/",
     "address": {
         "lineOne": "Unit 6C Duck Farm Court",
         "lineTwo": "Station Way W",
