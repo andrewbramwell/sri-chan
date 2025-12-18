@@ -1,6 +1,6 @@
 module.exports = {
     "name": "Sri-Chan Thai Massage",
-    "email": "help@sri-chan-thai-massage.co.uk",
+    "email": "srichanthaimassagebucks@gmail.com",
     "phoneForTel": "+447789789765",
     "phoneFormatted": "07789 789765",
     "openingHours": "Mon-Sat: 10am-8pm, Sun: 10am-7pm",
@@ -30,7 +30,7 @@ module.exports = {
             "image": "https://sri-chan-thai-massage.co.uk/assets/svgs/footer-logo.svg",
             "url": "https://sri-chan-thai-massage.co.uk",
             "telephone": "+447789789765",
-            "email": "help@sri-chan-thai-massage.co.uk",
+            "email": "srichanthaimassagebucks@gmail.com",
             "priceRange": "££",
             "address": {
                 "@type": "PostalAddress",
