@@ -3,7 +3,7 @@ module.exports = {
     "email": "srichanthaimassagebucks@gmail.com",
     "phoneForTel": "+447789789765",
     "phoneFormatted": "07789 789765",
-    "openingHours": "Mon-Sat: 10am-8pm, Sun: 10am-7pm",
+    "openingHours": "Mon-Sat: 10am-8pm",
     "onlineBooking": "https://srichanthaimassage.setmore.com/",
     "address": {
         "lineOne": "Unit 6C Duck Farm Court",
